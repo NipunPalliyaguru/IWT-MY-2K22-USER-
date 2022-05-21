@@ -1,0 +1,245 @@
+<?php
+
+header('Location: ../Html/Register.html');
+
+
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODOVEN | Registration</title>
+    <link rel="stylesheet" href="../Css/index.css">
+    <link rel="stylesheet" href="../Css/register.css">
+</head>
+<body>
+    <nav style="margin-bottom: 10%;">
+
+    <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Categories</a></li>
+         <li><a href="#">My Recipes</a></li>
+         <li><a href="#">About Us</a></li>
+         <li><a href="#">Contact Us</a></li>
+         <li><a href="#">Help</a></li>
+     </ul>
+
+     <div id="banner">
+         <h1>#FOODOVEN</h1>
+     </div>
+   <div id="logbtn">
+    <a href="#"><button class="log">Login</button></a>
+   </div>
+   <div id="regbtn">
+    <a href="#"><button class="log">Register</button></a>
+   </div>
+</nav>
+
+
+
+<font style="color: rgb(16, 127, 224);">
+
+<div class="main-step01">
+  <form action="..//Php/Register.php" method="post" enctype="multipart/form-data">
+<div class="profile-pic-div">
+    <img src="../Images/image.jpg" id="photo">
+
+    <input type="file" name="file" id="file" >
+
+    <label for="file" id="uploadBtn">Choose Photo</label>
+  </div>
+
+  <h2 id="h2">Personal Details</h2>
+
+
+    
+  
+    
+    <div class="colums">
+
+
+      <!--Full name-->
+        <div class="item">
+          <label for="name"><b>Full Name</b><span>*</span></label>
+          <input id="name" type="text" name="Fname" placeholder="First Name"  required/>
+        </div>
+        <div class="item" style="margin-bottom: 3%; color: aliceblue;">
+          <label for="eaddress" >     <span></span></label><br>
+          <input id="eaddress" type="text" name="Lname" placeholder="Last Name"   required/>
+        </div>
+        
+         <!--Address-->
+        <div class="item">
+          <label for="state"><b>Address</b><span>*</span></label>
+          <input id="state" type="text"  name="state" placeholder="Address Line one"    required/>
+        </div>
+
+        <div class="item">
+          <label for="phone"><span></span></label><br>
+          <input id="phone" type="text" placeholder="City"  name="city" required/>
+        </div>
+     
+        <div class="item">
+          <label for="street"><span></span></label><br>
+          <input id="street" type="text"  placeholder="province" name="province" required/>
+        </div>
+        <div class="item"style="margin-bottom: 3%;">
+          <label for="city"><span></span></label><br>
+          <input id="city" type="text" placeholder="country"  name="country" required/>
+        </div>
+
+
+         <!--Contact-->
+        <div class="item">
+          <label for="zip"><span></span><b>Contact Number</b></label><br>
+          <input id="zip" type="tel" placeholder="+94 11..."  name="tel" required/>
+        </div>
+
+        
+        <!--Account Details-->      
+        
+
+      </div>
+          <h2 id="h2" style="margin-top: 10%; margin-bottom: 3%;">Account Details</h2>
+      <div class="colums">
+        <div class="item">
+            <label for="street"><b>Email</b><span></span></label><br>
+            <input id="street" type="email"  placeholder="" name="email" required/>
+      </div>
+
+      <div class="item"style="margin-bottom: 3%;">
+        <label for="city"><b>Password</b><span></span></label><br>
+        <input  type="password"  id="password"  name="password" required/>
+      </div>
+      
+      <div class="item">
+        <label for="zip"><span></span><b>Confirm Password</b></label><br>
+        <input type="password" id="confirm_password"  name="password" required/>
+      </div></div>
+
+
+
+
+      <!--Category Details-->
+      <div class="left" style="margin: 3% 3% 3% 3%;">
+      <h2 id="h2" style="margin-top: 10%; margin-bottom: 8%;">Suggest Foods Categories</h2>
+    
+      <label class="container">Indian
+        
+          <input type="checkbox" name="data[]" value="Indian">
+
+          <span class="checkmark"></span>
+      </label>
+
+      <label class="container">Chinese
+        <input type="checkbox" name="data[]" value="Chinese">
+        <span class="checkmark"></span>
+     </label>
+
+     <label class="container">Italian
+      <input type="checkbox" name="data[]" value="Italian">
+       <span class="checkmark"></span>
+     </label>
+  
+     <label class="container">Fast Foods&nbsp;
+      <input type="checkbox" name="data[]" value="Fast Foods">
+        <span class="checkmark"></span>
+     </label>
+
+</div>
+
+
+
+
+
+<center>
+
+
+
+  <input type="submit"  name="next" class="action-button"  title="Submit Your Entries"  value="Submit"  />
+  <input type="reset"  class="action-button" value="Reset" title="Reset Your Entries"/>
+
+  </center>
+
+
+
+
+
+
+
+  
+  </form>
+  
+
+
+
+
+
+
+</div>
+
+
+<script src="../Js/app.js"></script>
+
+<script type="text/javascript">
+
+var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+  
+  </script>
+
+
+
+
+
+
+    <footer id="footer">
+
+        <div id="fbanner">
+         <h2>#FOODOVEN</h2>
+     </div>
+     <div id="social">
+         <h5>Follow us on :</h5>
+     </div>
+     <div id="icon">
+         
+         <div id="fb"><a href="https://www.facebook.com/" target="_blank"><img src="../Images/facebook.png" class="img1"></a></div>
+         <div id="tweet"><a href="https://twitter.com/" target="_blank"><img src="../Images/twitter.png" class="img2"></a></div>
+         <div id="insta"><a href="https://www.instagram.com/" target="_blank"><img src="../Images/instragram.png" class="img3"></a></div>
+        
+     </div>
+
+     <div id="links">
+         <h5 id="linkh5"><u>Quick Links</u></h5>
+         <ul>
+             <li><a href="#">About Us</a></li>
+             <li><a href="#">Contact Us</a></li>
+             <li><a href="#">Help</a></li>
+         </ul>
+     </div>
+     <div id="copy">
+         <p>Copyright &copy; 2022 FoodOven.<br>All Rights Reserved.</p>
+     </div>
+
+    </footer>
+
+
+</body>
+
+</html>
