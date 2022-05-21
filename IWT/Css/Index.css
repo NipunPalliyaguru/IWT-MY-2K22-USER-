@@ -1,0 +1,194 @@
+*{
+    margin :10%;
+    padding :10px;
+}
+
+body{
+
+    font-family: sans-serif;
+}
+
+nav{
+    height :60px;
+    background-color:rgb(24, 176, 123);
+    width: 100%;
+
+}
+
+nav ul{
+
+float: right;
+list-style: none;
+margin-right: 280px;
+margin-top: 0px;
+
+
+}
+
+nav ul li{
+    display: block;
+    float: left;
+    padding: 24px;
+    height: 12px;
+}
+
+nav ul li a{
+
+    color: black;
+    padding-top: 0px;
+    text-decoration: none;
+    font-size: 17px;
+    color: Black;
+    transition-duration: 0.4s;
+
+}
+
+
+nav ul li a:hover{
+    color: white;
+    
+}
+
+#banner{
+    padding: 0px;
+}
+
+#logbtn{
+    float:right;
+    margin-left: 465px;
+    margin-right: 20px;
+    margin-top: -40px;
+    
+ 
+}
+
+#regbtn{
+    float:right;
+    margin-left: 465px;
+    margin-right: 135px;
+    margin-top: -40px;
+    
+ 
+}
+
+.log{
+    width:100px;
+    height: 30px;
+    background-color:transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    transition-duration: 0.4s;
+    border-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color:black;
+}
+
+.log:hover{
+
+    background-color: darkmagenta;
+    color: white;
+    border-color:darkmagenta;
+}
+
+#footer{
+    
+   background-color: gray;
+   
+   height: 150px;
+   bottom: 0px;
+   width: 100%;
+   
+}
+
+#social{
+    margin-top:15px;
+    margin-left:25px;
+}
+
+#fbanner{
+    padding: 15px 0px 0px 20px;
+    margin-top: 15px;
+}
+
+.img1{
+    width:50px;
+   
+}
+
+.img2{
+    width:50px;
+   
+}
+
+.img3{
+    width:25px;
+    
+}
+
+.icon ul li{
+
+    float:inline;
+    display: block;
+}
+
+#tweet{
+    margin-top: -52px;
+    margin-left: 55px;
+
+}
+#fb{
+    margin-top: 2px;
+    margin-left: 10px;
+
+}
+
+#insta{
+    margin-top: -41px;
+    margin-left: 112px;
+
+}
+
+#links{
+
+    margin-top: -110px;
+    margin-left: 1385px;
+    
+
+}
+
+#links ul li{
+    list-style: none;
+    line-height: 30px;
+    
+
+}
+
+#links ul li a{
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+#links ul li a:hover{
+
+    color: rgb(203, 0, 0);
+
+}
+
+#linkh5{
+    
+    font-weight: 900;
+}
+
+#copy p{
+    text-align: center;
+}
+
+#copy{
+    
+    width: 400px;
+    margin-left: 550px;
+    margin-top:-30px;
+}
+    
